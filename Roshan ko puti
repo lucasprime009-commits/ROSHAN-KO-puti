@@ -24,7 +24,12 @@ function BuildSchema()
 				bold = Q.bold or false,
 				page = S,
 				section = L,
-			}
+			}local Window = Library:CreateWindow({
+    Name = "Siddhant Hub",
+    LoadingTitle = "Siddhant hub blox fruit",
+    -- other settings...
+})
+
 		elseif Q.type == "box" then
 			m[d] = { name = roshan, type = "box", value = Q.value or "", page = S, section = L }
 		elseif Q.type == "slider" then
