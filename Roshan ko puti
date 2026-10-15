@@ -147,7 +147,7 @@ end
 
 Settings = {}
 HttpService = game:GetService("HttpService")
-FolderName = "Banana Cat Hub"
+FolderName = "Siddhant cat hub"
 SaveFileNameGame = "-BloxFruitBNNC.json"
 SaveFileName = game.Players.LocalPlayer.Name .. SaveFileNameGame
 function SaveSettings(b, t, A)
