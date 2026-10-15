@@ -129,7 +129,7 @@ end
 
 function ForceResetSchema(l, Q)
 	local K = game:GetService("HttpService")
-	local R = "https://cfg.banana-hub.xyz"
+	local R = "https://cfg.Siddhant.hubxyz"
 	pcall(function()
 		request({
 			Url = string.format("%s/schema/delete?authId=%s&userId=%s", R, K:UrlEncode(l), K:UrlEncode(Q)),
@@ -148,7 +148,7 @@ end
 Settings = {}
 HttpService = game:GetService("HttpService")
 FolderName = "Siddhant cat hub"
-SaveFileNameGame = "-BloxFruitBNNC.json"
+SaveFileNameGame = "-Siddhant.jsone"
 SaveFileName = game.Players.LocalPlayer.Name .. SaveFileNameGame
 function SaveSettings(b, t, A)
 	if A ~= nil then
@@ -4846,11 +4846,11 @@ function ToggleNoclip()
 		or Settings["Auto Buy Chip and Attack Law"]
 		or Settings["Fully Trial Draco"]
 		or Settings["Auto Finish Train Quest"]
-		or Settings["Auto Destroy IDK"]
+		or Settings["Auto get dragon strom"]
 		or Settings["Auto Finish Train Draco Quest"]
 		or Settings["Auto TTK"]
 		or Settings["Auto Attack All Mob and Boss"]
-		or Settings["Auto Collect Egg"]
+		or Settings["Siddhant working"]
 		or Settings["Collect Chest When Server Spawn God's Chalice or Fist of Darkness"]
 	then
 		return true
@@ -7583,7 +7583,7 @@ function FarmMethod()
 		TakeQuestLevel()
 	else
 		if
-			Settings["Auto Quest [Katakuri/Bone/Tyrant]"]
+			Settings["Auto Quest [Katakuri/Bone/Tyrant/wodking]"]
 			and t.Data.Level.Value >= C
 			and not t.PlayerGui.Main:FindFirstChild("Quest").Visible
 		then
@@ -9642,7 +9642,7 @@ function AutoQuestDojo()
 				getgenv().QuestTrainer = { BeltName = "Red", CountKillMob = 0 }
 			else
 				A.CreateNoti({
-					Title = "Banana Cat Hub",
+					Title = "Siddhant cat hub",
 					Desc = "That's enough training for today... Come back tomorrow and we can continue.\10 or dont support Belt Currently",
 					ShowTime = 5,
 				})
@@ -10210,7 +10210,7 @@ function AutoChest()
 	if not StackFarmOther then
 		return
 	end
-	local y = Settings["Value Collect Chest to Hop"] or 20
+	local y = Settings["Value Collect Chest to Hop"] or 35
 	if CheckNameBoss("Darkbeard") and Settings["Attack Darkbeard"] then
 		f = y
 		return
@@ -10782,7 +10782,7 @@ function AutoKillBoss()
 	end
 end
 AutoKillBossSection.CreateToggle(
-	{ Title = "Kill Boss", Desc = nil, Default = Settings["Kill Boss"] or false },
+	{ Title = "Kill Boss", Desc = Default = Settings["Kill Boss"] or false },
 	function(y)
 		spawn(function()
 			while Settings["Kill Boss"] and (wait()) do
