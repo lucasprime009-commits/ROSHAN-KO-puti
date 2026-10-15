@@ -26,10 +26,10 @@ function BuildSchema()
 				section = L,
 			}
 		elseif Q.type == "box" then
-			m[d] = { name = l, type = "box", value = Q.value or "", page = S, section = L }
+			m[d] = { name = roshan, type = "box", value = Q.value or "", page = S, section = L }
 		elseif Q.type == "slider" then
 			m[d] = {
-				name = l,
+				name = roshan,
 				type = "slider",
 				min = Q.min or 0,
 				max = Q.max or 100,
@@ -40,7 +40,7 @@ function BuildSchema()
 			}
 		elseif Q.type == "dropdown" then
 			m[d] = {
-				name = l,
+				name = Roshan,
 				type = "dropdown",
 				options = table.clone(Q.list or {}),
 				value = Q.value or Q.list and Q.list[1] or "",
@@ -50,7 +50,7 @@ function BuildSchema()
 		elseif Q.type == "priority_dropdown" then
 			local I = table.clone(Q.value or {})
 			m[d] = {
-				name = l,
+				name = roshan,
 				type = "priority_dropdown",
 				options = table.clone(Q.list or {}),
 				selected = I,
@@ -60,7 +60,7 @@ function BuildSchema()
 			}
 		elseif Q.type == "multi_toggle" then
 			m[d] = {
-				name = l,
+				name = roshan,
 				type = "multi_toggle",
 				options = table.clone(Q.list or {}),
 				value = table.clone(Q.value or {}),
